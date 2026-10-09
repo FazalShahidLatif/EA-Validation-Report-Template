@@ -1,0 +1,46 @@
+{
+  "report_title": "EA Validation Report",
+  "ea_name": "TrendFollowingEA_v2.5",
+  "author": "Fazal Shahid Latif",
+  "date": "2026-10-08",
+  "config": {
+    "symbol": "XAUUSD",
+    "timeframe": "H1",
+    "period": "2024.01.01-2024.12.31",
+    "initial_deposit": 10000,
+    "leverage": 100
+  },
+  "performance": {
+    "total_trades": 245,
+    "winning_trades": 118,
+    "losing_trades": 127,
+    "win_rate": 48.2,
+    "profit_factor": 1.62,
+    "max_drawdown_pct": 14.3,
+    "expectancy": 42.50,
+    "sharpe_ratio": 1.28,
+    "total_profit": 3845.00,
+    "avg_trade_duration": "4h 23m"
+  },
+  "walk_forward": {
+    "folds": 5,
+    "avg_profit_factor": 1.48,
+    "avg_drawdown_pct": 16.1,
+    "stability_score": 78
+  },
+  "monte_carlo": {
+    "simulations": 1000,
+    "confidence_95": {
+      "max_drawdown": 28.5,
+      "min_profit": -1200,
+      "max_profit": 9500
+    }
+  },
+  "recommendation": "PASS with conditions",
+  "conditions": [
+    "Maximum risk per trade: 2%",
+    "Maximum daily drawdown: 5%",
+    "Maximum weekly drawdown: 10%",
+    "Weekly performance review required"
+  ]
+}
